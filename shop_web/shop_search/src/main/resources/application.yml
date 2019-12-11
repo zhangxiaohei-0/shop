@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  thymeleaf:
+    cache: false
+
+dubbo:
+  application:
+    name: web-front
+  registry:
+    address: zookeeper://192.168.154.128:2181
+  consumer:
+    check: false
+  protocol:
+    port: -1
