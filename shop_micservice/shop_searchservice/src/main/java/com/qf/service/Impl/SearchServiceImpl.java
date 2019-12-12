@@ -56,7 +56,7 @@ public class SearchServiceImpl implements SearchService {
         System.out.println(keyword);
         SolrQuery query = new SolrQuery();
 
-        //惊醒分页设置
+        //进行分页设置
         query.setStart(0);
         query.setRows(3);
         //设置高亮
