@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+dubbo:
+  protocol:
+    port: -1
+  application:
+    name: web-sso
+  registry:
+    address: zookeeper://192.168.154.128:2181
+  consumer:
+    check: false
+    #提供者调消费者超时多长时间后重试，默认为1秒
+    timeout: 10000
+    #第一次调用失败后，还会重试的次数，默认为2
+    retries: 0
+
+
+spring:
+  thymeleaf:
+    cache: false
